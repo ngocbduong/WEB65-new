@@ -1,0 +1,239 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 8%), 0 4px 4px 0 rgb(0 0 0 / 8%);
+    display: flex;
+}
+
+.header-container {
+    width: 65vw;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.header-logo {
+    flex: 1 0 0%;
+}
+
+.header-logo img {
+    height: 60px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    flex: 1 0 0%;
+    height: 100%;
+}
+
+.header-language {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 0 0%;
+    margin-bottom: 5px;
+}
+
+.nav-item {
+    white-space: nowrap;
+    border-bottom: 4px solid transparent;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-menu-item {
+    display: none;
+    padding: 24px;
+    column-gap: 20px;
+    box-shadow: 0 0 4px 0 rgb(0 0 0 / 8%), 0 4px 4px 0 rgb(0 0 0 / 8%);
+}
+
+.nav-item:hover {
+    border-bottom: 4px solid chocolate;
+}
+
+.nav-item:hover .nav-menu-item {
+    background-color: white;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: calc(100% + 4px);
+    display: flex;
+}
+
+.nav-menu-column {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+.language-item {
+    text-decoration: none;
+    color: black;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    /* align-items:; */
+}
+
+.language-item:first-child::after {
+    content: " ";
+    height: 30%;
+    margin-left: 10px;
+    width: 2px;
+    background-color: black;
+}
+
+.container-bio {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 65%;
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+:root {
+    --dark-grey: #707070;
+}
+
+.container-bio h3,
+h4 {
+    color: var(--dark-grey);
+    font-size: 1.125rem;
+}
+
+.list-users {
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.list-users-wrapper {
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.user-bg {
+    background-image: url(https://resources.mindx.edu.vn/uploads/images/Minh%20H%C3%B2a.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 276px;
+    padding: 0 16px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.user-info {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    transition: all 500ms ease;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-bg .user-des {
+    transition: all 500ms ease;
+}
+
+.user-bg:hover .user-des {
+    opacity: 0;
+    /* transition: ; */
+}
+
+.user-bg:hover .user-info {
+    opacity: 1;
+}
+
+.user-info h3:after {
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: red;
+    margin-top: 10px;
+}
+
+.user-info h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.list-users-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+    width: 65%;
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+    padding-top: 33.3333%;
+}
+
+.bg-text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.text.content {
+    top: calc(50%-7rem);
+    font-size: 2.5rem;
+    line-height: 1rem;
+    position: relative;
+    left: calc((100vw-67rem) /2);
+    color: white;
+}
+
+.video-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}

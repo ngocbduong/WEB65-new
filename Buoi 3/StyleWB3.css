@@ -1,0 +1,27 @@
+.text1 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgba(14, 131, 140, 0.947);
+}
+
+.background {
+    background-color:rgb(2, 255, 242);
+}   
+
+.avatar {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+hr {
+    width: 80%;
+    border-top: 3px dashed black;
+    transform: translateX(-70px);
+    margin-left: 0%;
+}
+
+i {
+    width: 15px;
+    height: 15px;
+    color: moccasin;
+}

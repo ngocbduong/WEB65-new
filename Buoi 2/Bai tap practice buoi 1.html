@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap practice buoi 1</title>
+    <style>
+        .center {
+            text-align: center;            
+        }
+    </style>
+    <style>
+        .right {
+            position: absolute;
+            right: 500px;
+            padding: 10px;
+        }
+    </style>
+    <style>
+        .border1 {
+            border-style: groove;
+            border-width: thin;
+            border-color: darkgray;
+        }
+    </style>
+    <style>
+        .Attach-file {
+            padding: 10px;
+            display: inline-block;
+            cursor: pointer;
+            background: red;
+            display: table;
+            color:aliceblue;
+        }
+    </style>
+    <style>
+        input[type="file"] {
+            display: none;
+        }
+
+        input[type="submit"] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <div><span>4/21/22, 9:48 PM</span>
+    <span class="right"> Build a Survey Form - Responsive Web Design Projects</span>
+</div> 
+<h1 class="center">Application For Permission To Date My Daughter</h1>
+<div>
+    <b>Note:</b>
+    <span>Form is to be completed at least 21 days prior to date</span>
+</div>
+<br>
+<div class="border1">
+    <h4>Personal Details</h4>
+    <div>
+        <label for="input-name">Name: </label>
+        <input placeholder="Enter name here" id="input-name"/>
+    </div>
+    <br>
+    <div>
+        <label for="input-Address">Address: </label>
+        <input placeholder="Enter address here" id="input-Address"/>
+    </div>
+    <br>
+    <div>
+        <label for="input-email">Email: </label>
+        <input type="email" placeholder="Enter email here" id="input-email"/>
+    </div>
+    <br>
+    <div>
+        <label for="input-phone">Phone number: </label>
+        <input maxlength="10" type="email" placeholder="Enter 10 digit here" id="input-phone"/>
+    </div>
+    <br>
+    <div>
+        <label for="input-IQ">IQ: </label>
+        <input type="email" placeholder="Enter email here" id="input-IQ"/>
+    </div>
+    <br>
+    <div>
+        <label>Gender</label>
+        <br>
+        <div>
+            <input type="radio" checked name="gender" />
+            <span>Male</span>
+        </div>
+        <div>
+            <input type="radio" checked name="gender" />
+            <span>Female</span>
+        </div>
+        <div>
+            <input type="radio" checked name="gender" />
+            <span>Other</span>
+        </div>
+    </div>
+    <br>
+    <div>
+        <label for="input-date">Date of Proposed Outing:</label>
+        <input type="date" id="input-date" />
+    </div>
+</div>
+<br>
+<div class="border1">
+    <label>Check All That Apply</label>
+    <br>
+    <br>
+    <div>
+        <input type="checkbox"/>
+        <span>I have tattoos and/or piercings</span>
+    </div>
+    <div>
+        <input type="checkbox"/>
+        <span>I am more than 2 years older than my daughter</span>
+    </div>
+    <div>
+        <input type="checkbox"/>
+        <span>I own a panel van or V8 ute</span>
+    </div>
+    <div>
+        <input type="checkbox"/>
+        <span>I work full-time</span>
+    </div>
+    <div>
+        <input type="checkbox"/>
+        <span>My parents are rich</span>
+    </div>
+    <div>
+        <input type="checkbox"/>
+        <span>Is the date at a well lit public location</span>
+    </div>
+   </div>
+   <br>
+<div class="border1">
+    <label for="input-select">Political Persuasion:</label>
+    <select id="input-select">
+        <option selected>Right wing</option>
+        <option selected>Left wing</option>
+    </select>
+    <span>
+    <label for="input-university">Education Level Completed</label>
+    <select id="input-university">
+        <option selected>University</option>
+        <option>College</option>
+        <option>High school</option>
+    </select>
+    </span>
+</div>
+<br>
+<div class="border1">
+    <div>
+        <h1>Essay Section</h1>
+        <label for="input-text">In 50 words or more explain why you want to date my daughter </label>
+        <br>
+        <br>
+        <div>
+            <textarea placeholder="Enter Text Here" cols="60" rows="5" id="input-text"></textarea>
+        </div>
+    </div>
+    <div>
+        <label for="input-references">Please upload contact details for 2 references</label>
+        <br>
+        <br>
+        <div>
+            <textarea placeholder="Enter Text Here" cols="60" rows="5" id="input-references"></textarea>
+        </div>
+    </div>
+    <div>
+        <label>Upload Police Clearance Certificate, Bank Statement and Medical Certificates here</label>
+        <div>
+            <label class="Attach-file" for="attachfile">Attach file</label>
+            <input id="attachfile" type="file" accept=".jpg, .jpeg, .png"/>
+        </div>
+    </div>
+</div>
+<br>
+<div>
+    <label class="Attach-file" for="submit">Send Your Application</label>
+    <input type="submit" id="submit"/>
+</div>
+</form>
+</body>
+
+</html>
