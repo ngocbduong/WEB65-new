@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        .menu-items {
+            display: inline-block;         
+        }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            background-color: antiquewhite;         
+        }
+        .menu-nav {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: larger;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 0 20px;
+        }
+        .biography {
+            margin: 0 20%;
+            display: flex;
+            justify-content: space-around;
+        }
+        li {
+            padding: 20px;
+        }
+        .information {
+            height: 70%;
+            width: 50%;
+            margin: 20px auto;
+            background-color:blanchedalmond;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+        }
+        .information-menu {
+            padding: 20px 0;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <header class="menu">
+        <div style="padding: 20px; font-size: larger; color: black;"> 
+            My Profile
+        </div>
+        <ul class="menu-nav">
+            <li class="menu-items">
+                <a href="Home">Home</a>
+            </li>
+            <span>|</span>
+            <li class="menu-items">
+                <a href="Home">About</a>
+            </li>
+            <span>|</span>
+            <li class="menu-items">
+                <a href="Home">Projects</a>
+            </li>
+            <span>|</span>
+            <li class="menu-items">
+                <a href="Home">Achievements</a>
+            </li>
+            <span>|</span>
+            <li class="menu-items">
+                <a href="Home">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <section style="height: 25vw; background-color: aquamarine;">
+        <div style="height: 80px; display: flex; align-items: center; justify-content: center;">
+            <h1 style="color:red; text-decoration: underline;">About Me</h1>
+        </div>
+        <div class="biography">
+            <div>
+                <img src="https://i.pinimg.com/564x/ec/51/c0/ec51c086dcea72ed7a4ab1d9925054af.jpg" style="height: 300px; border-radius:40px">
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <th>Name: </th>
+                        <th>Minion</th>
+                    </tr>
+                    <tr>
+                        <th>Age: </th>
+                        <th>Young Buffalo</th>
+                    </tr>
+                    <tr>
+                        <th>Relationship status: </th>
+                        <th>Alone with many chicks</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section style="height: 25vw; background-color:cornsilk;">
+        <div style="height: 80px; display: flex; align-items: center; justify-content: center;">
+            <h1 style="color:red; text-decoration: underline;">Projects</h1>
+        </div>
+        <div class="biography">
+            <div>
+                <ul style="padding:20px; font-size: larger;">
+                    <li>banana eat</li>
+                    <li>banana fight</li>
+                    <li>banana sleep</li>
+                    <li>banana devise</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://i.pinimg.com/564x/77/b4/99/77b499b22f672325bd520dd104c76093.jpg" style="height: 300px; border-radius:40px">
+            </div>
+        </div>
+    </section>
+    <section style="height: 25vw; background-color:azure;">
+        <div style="height: 80px; display: flex; align-items: center; justify-content: center;">
+            <h1 style="color:red; text-decoration: underline;">Achievements</h1>
+        </div>
+        <div>
+            <ul style="padding:20px; font-size: larger;">
+                <li style="text-transform:capitalize; text-decoration: underline;"><b>1st prize: 50 million USD invest in Banana</b>
+                    <ul>
+                        <li>August 2022</li>
+                        <li>50 million USD in Banana</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section style="height: 35vw; background-color:darkgrey;">
+        <div style="height: 80px; display: flex; align-items: center; justify-content: center;">
+            <h1 style="color:red; text-decoration: underline;">Contact</h1>
+        </div>
+        <div class="information">
+            <table class="information-menu">
+                <tr>
+                    <td style="text-align:center">
+                        <label for="input-name"> Name: 
+                            <input placeholder="Enter your name here" id="input-name" style="width: 200px; margin: 0 20px">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">
+                        <label for="input-email"> Email: 
+                            <input placeholder="Enter your email here" id="input-email" style="width: 200px; margin: 0 20px" type="email">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center">
+                        <label for="input-number">Number: 
+                            <input placeholder="Enter your number here" id="input-number" style="width: 200px; margin: 0 20px">
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align:center;">
+                        <label for="input-text" style="display:flex; align-items: center; justify-content: center;">
+                            Messages:
+                            <textarea id="input-text" placeholder="Enter your text here" style="width: 200px; margin: 0 20px" rows="5" cols="7"></textarea>
+                        </label>               
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="display: flex; justify-content: center;">
+            <button style="height: 30px; width: 100px">Submit</button>
+        </div>
+    </section>
+</body>
+</html>
