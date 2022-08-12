@@ -10,6 +10,7 @@
     background-color: rebeccapurple;
     display: flex;
     align-items: center;
+    position: fixed;
 }
 
 .header-item {
