@@ -1,0 +1,214 @@
+.background {
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/a1543997-c1fd-4946-92d3-b0a3648b92c7/2916b9ca-8da5-461a-8c82-d60377763867/VN-vi-20220808-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    height: 100%;
+    background-image: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+}
+
+.background::before {
+    content: "";
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.header {
+    width: 100%;
+    height: 9rem;
+    border-bottom: transparent;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.header-logo {
+    padding: 2rem 5rem;
+    fill: #E50914;
+    line-height: 9rem;
+    position: absolute;
+}
+
+.header-logo svg {
+    height: 4.5rem;
+    width: 16.7rem;
+}
+
+.login-body {
+    padding: 6rem;
+    position: relative;
+    z-index: 90;
+    max-width: 45rem;
+    height: 63rem;
+    margin-left: 50%;
+    border-radius: 1rem;
+    background: rgba(0,0,0,0.75);
+    transform: translateX(-50%);
+}
+
+.login-body h2 {
+    font-size: 3.2rem;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 2.8rem;
+}
+
+.login-body input {
+    height: 5rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    background: #333;
+    border: 1px solid #333;
+    outline: none;
+    color: white;
+    padding-left: 1.5rem;
+}
+
+.login-body input::after {
+    border-bottom: 2px solid #e87c03;
+    border-bottom-left-radius: ;
+}
+
+.input-wrap {
+    margin-bottom: 2.5rem;
+}
+
+.login-body button {
+    height: 5rem;
+    width: 100%;
+    color: white;
+    background: #E50914;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    border: 1px solid #E50914;
+    cursor: pointer;
+}
+
+.support-content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: #b3b3b3;
+    font-weight: 500;
+}
+
+.support-content input {
+    width: 21px;
+    height: 18px;
+    margin-right: 3px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.help a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.help a:hover,
+.login-footer a:hover,
+.login-note a:hover {
+    text-decoration: underline;
+}
+
+.login-footer {
+    margin-top: 8rem;
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.login-footer a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.login-note {
+    margin-top: 11px;
+    color: #8c8c8c;
+    font-size: 13px;
+    line-height: normal;
+}
+
+.login-note a {
+    color: blue;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.background-footer {
+    background: rgba(0,0,0,0.75);
+    width: 100%;
+    padding-bottom: 2rem;
+    color: #757575;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.site-footer {
+    color: #737373;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2.5rem 0;
+    max-width: 100rem;
+}
+
+.question {
+    margin-bottom: 1rem;
+    font-size: 15px;
+}
+
+.question a {
+    color: #737373;
+    text-decoration: none;
+}
+
+.question a:hover {
+    text-decoration: underline;
+}
+
+.other-questions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.other-questions a {
+    color: #737373;
+    font-size: 13px;
+}
+
+.other-questions li {
+    width: 25%;
+    min-width: 10rem;
+}
+
+.other-questions a:hover {
+    text-decoration: underline;
+}
+
+.language {
+    background-color: black;
+    background-image: none;
+    margin-top: 2rem;
+    border: 1px solid #333;
+    font-size: 14px;
+    display: block;
+    border-radius: 2px;
+    max-width: fit-content;
+    display: flex;
+}
+
+.globe {
+    padding: 0 8px;
+}
+
+.dropdown-icon {
+    padding: 0 8px;
+}
+

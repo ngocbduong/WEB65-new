@@ -1,0 +1,239 @@
+header {
+    height: 6.5rem;
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    z-index: 99;
+    position: absolute;
+}
+
+header a:hover,
+header a i:hover,
+header i:hover {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+
+.header-container {
+    height: 100%;
+    padding: 0 1rem;
+    width: 140rem;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container .header-left-item::after,
+.header-container .menu-item-more::after,
+.header-container .header-right-signin::after,
+.header-container .header-search::after    {
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    height: 4px;
+    background: #dd0000;
+    content: "";
+    transition: all .35s ease-in-out;
+    width: 0;
+}
+
+.header-container .header-left-item:hover::after,
+.header-container .menu-item-more:hover::after,
+.header-container .header-right-signin:hover::after,
+.header-container .header-search:hover::after {
+    width: 100%;
+}
+
+.menu-item-more {
+    position: relative;
+}
+
+.header-left li,
+.header-right li {
+    display: inline-block;
+}
+
+.header-logo {
+    width: 18.66rem;
+    margin-right: 1.2rem;
+    display: inline-block;
+}
+
+.header-left-item a,
+.menu-item-more {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.6rem;
+    font-weight: 500;
+    transition: all .35s ease-in-out;
+    padding: 0 1.5rem;
+}
+
+.header-left-item {
+    position: relative;
+}
+
+.header-right-signin a {
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
+.header-right-signin,
+.header-search {
+    position: relative;
+}
+
+.header-right-subscribe {
+    background-color: #dd0000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 0 1.5rem;
+    border-radius: 20px;
+    line-height: 3.2rem;
+    height: 3.2rem;
+}
+
+.header-right-subscribe:hover {
+    background-color: #772424;
+}
+
+.header-right-subscribe a {
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.header-search {
+    width: 6rem;
+    height: 100%;
+    
+}
+
+.header-search a i {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.6rem;
+    padding: 0 2rem;
+}
+
+.header-right ul,
+.header-search {
+    display: inline-block;
+}
+
+.section-center {
+    background-image: url(https://neulionms-a.akamaihd.net/espn/v3/espnplayer/site_4/images/landing_top_bg.jpg);
+    background-color: #16181b;
+    background-position: center top;
+    height: 85.4rem;
+    padding-top: 12.5rem;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.section-center-container {
+    font-size: 4.8rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    padding: 0 25rem;
+    line-height: 10rem;
+}
+
+.section-center-container a {
+    color: red;
+    text-decoration: none;
+}
+
+.learn-more {
+    margin-top: 1rem;
+    position: relative;
+}
+
+.learn-more-text {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.learn-more-arrow {
+    margin-top: 1rem;
+    position: relative;
+}
+
+.learn-more .learn-more-arrow img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -0.8rem;
+    animation-name: runningArrow;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+}
+
+@keyframes runningArrow {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 1rem;
+    }
+}
+
+.section-subcenter {
+    height: 71rem;
+    background: linear-gradient(to bottom, #16181b, #16181b 50%, #313238);
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.subcenter-image {
+    background-image: url(https://neulionms-a.akamaihd.net/espn/v3/espnplayer/site_4/images/landing_pic01.png);
+    background-position: center bottom;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    transform: translateX(13%);
+}
+
+.subcenter-text-container {
+    width: 124rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.subcenter-text {
+    width: 30%;
+}
+
+.subcenter-text-title {
+    padding-top: 22rem;
+    line-height: 4.8rem;
+    text-align: left;
+    color: white;
+    font-weight: 800;
+    font-size: 4.8rem;
+}
+
+.subcenter-text-description {
+    margin-top: 2rem;
+    line-height: 3rem;
+    color: #a5a6a7;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
