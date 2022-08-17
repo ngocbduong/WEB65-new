@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap);
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+header {
+    background-color: #f2f2f2;
+    height: 110px;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.language-menu {
+    margin-top: 25px;
+    position: relative;
+}
+
+.selected-lang {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+}
+
+.selected-lang::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-image: url(https://flagicons.lipis.dev/flags/4x3/us.svg);
+    background-repeat: no-repeat;
+}
+
+.language-menu ul {
+    background-color: white;
+    border: 1px solid #f8f8f8;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: none;
+    position: absolute;
+}
+
+.language-menu ul li {
+    list-style: none;   
+    display: flex;
+    justify-content: space-between;
+}
+
+.language-menu ul li a {
+    width: 145px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.language-menu ul li a::before {
+    content: "";
+    display: inline-block;
+    width: 32px;
+    height: 32px; 
+    margin-right: 5px;
+    vertical-align: middle;
+    /* background-image: url(https://flagicons.lipis.dev/flags/4x3/us.svg); */
+   
+}
+
+.language-menu ul li a:hover {
+    background-color: #f2f2f2;
+
+}
+
+.de::before {
+    background-image: url(https://flagicons.lipis.dev/flags/4x3/de.svg);
+    background-repeat: no-repeat;
+}
+
+.fe::before {
+    background-image: url(https://flagicons.lipis.dev/flags/4x3/fr.svg);
+    background-repeat: no-repeat;
+}
+
+.ch::before {
+    background-image: url(https://flagicons.lipis.dev/flags/4x3/cn.svg);
+    background-repeat: no-repeat;
+}
+
+.vie::before {
+    background-image: url(https://flagicons.lipis.dev/flags/4x3/vn.svg);
+    background-repeat: no-repeat;
+}
+
+.language-menu:hover ul {
+    display: block;
+}
