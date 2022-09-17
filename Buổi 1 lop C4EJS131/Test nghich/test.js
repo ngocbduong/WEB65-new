@@ -93,3 +93,56 @@ let listnodes = document.querySelector('.language-menu');
 console.log(listnodes.getElementsByTagName('a'));
 
 
+// practice F8 65 du lieu so:
+
+function checkBoolean(value) {
+    return Number.isInteger(value);
+}
+
+console.log(checkBoolean(NaN));
+
+// Practice array 
+
+function getFirstElement(array) {
+    var firstElement = array.shift();
+    var array = array.unshift(firstElement);
+    return firstElement;
+    
+}
+
+
+
+// Ví dụ sử dụng
+var animals = ['Monkey', 'Tiger', 'Elephant'];
+var result = getFirstElement(animals);
+
+console.log(result); // Expected: "Elephant"
+console.log(animals); // Expected: ['Monkey', 'Tiger', 'Elephant']
+
+// Check sử dụng object constructor và object prototype:
+
+// Làm bài tại đây
+function Student(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+}
+
+Student.prototype.getFullName = function() {
+    return `${this.firstName} ${this.lastName}`
+}
+
+// Ví dụ khi sử dụng
+var student = new Student('Long', 'Bui');
+
+console.log(student.firstName);  // 'Long'
+console.log(student.lastName);  // 'Bui'
+console.log(student.getFullName());  // 'Long Bui'
+
+// Hàm year:
+var date2 = Date();
+
+function getNextYear() {
+    return date.getFullYear() + 1;
+}
+
+console.log(getNextYear());
