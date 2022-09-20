@@ -391,3 +391,45 @@ footer {
 .footer-power {
     text-align: center;
 }
+
+.more-panel ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+.more-panel {
+    display: none;
+}
+
+.more-panel .open {
+    display: block;
+    position: absolute;
+    background: white;
+    width: 200px;
+    border-radius: 6px;
+    z-index: 100;
+    padding: 6px 20px;
+    top: 55px;
+    left: 50%;
+    margin-left: -100px;
+    box-shadow: 2px 0 4px rgb(255 255 255 / 35%);
+}
+
+.more-item {
+    height: 42px;
+    line-height: 42px;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.more-item a {
+    font-size: 14px;
+    color: black;
+    font-weight: 300;
+}
+
+.more-panel ul .more-item a:hover {
+    color: red;
+}
