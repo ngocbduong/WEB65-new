@@ -29,7 +29,7 @@
                         <a href="https://www.espnplayer.com/schedule" data-react-link="/schedule" class="menu-link">Full Schedule</a>
                     </li>
                     <li class="header-left-item">
-                        <a href="https://www.espnplayer.com/category/videos" data-react-link="/category/videos" class="menu-link">Films &amp; Docs</a>
+                        <a href="../Film&Docs/index.html" class="menu-link">Films &amp; Docs</a>
                     </li>
                     <li class="menu-item-more" onclick="changeclass()">
                             <i class="fa-solid fa-ellipsis"></i>
@@ -52,17 +52,18 @@
             <div class="header-right">
                 <ul>
                     <li class="header-right-signin">
-                        <a href="" >Sign in</a>
+                        <a href="../Sign-in/signIn.html" >Sign in</a>
                     </li>
                     <li class="header-right-subscribe">
-                        <a href="https://www.espnplayer.com/secure/subscription?sku=BMONTHLY&amp;signup=true">subscribe</a>
+                        <a href="../Subscription/Subscription.html">subscribe</a>
                     </li>
                 </ul>
-                <div class="header-search" >
-                    <a href="https://www.espnplayer.com/search" data-react-link="/search">
+                <div class="header-search" onclick="changeclasssearch()">
+                    <a>
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                 </div>
+                <input class="search-input" placeholder="   Search ESPN Player..." type="text" id="searchplayer">
                 </div>
         </div>      
     </header>
@@ -73,7 +74,7 @@
         </div>
         <a class="learn-more">
             <div class="learn-more-text">Learn more</div>
-            <div class="learn-more-arrow">
+            <div class="learn-more-arrow" onclick="scrollbottom()">
                 <img src="https://neulionms-a.akamaihd.net/espn/v3/espnplayer/site_4/images/arrow_down.svg">
             </div>
         </a>
@@ -161,5 +162,6 @@
         </div>
     </footer>
     <script src="Project-onoff.js"></script>
+    <script src="Project-search.js"></script>
 </body>
 </html>

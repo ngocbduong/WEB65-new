@@ -146,3 +146,29 @@ function getNextYear() {
 }
 
 console.log(getNextYear());
+
+// Check bài:
+
+const sports = [
+    {
+        name: 'Bóng rổ',
+        like: 6
+    },
+    {
+        name: 'Bơi lội',
+        like: 5
+    },
+    {
+        name: 'Bóng đá',
+        like: 10
+    },
+]
+    function getMostFavoriteSport(array) {
+        var sportlist = array.filter(function(sport, index) {
+            return sport.like > 5;
+        });
+        console.log(sportlist);
+    }
+   
+getMostFavoriteSport(sports);
+
