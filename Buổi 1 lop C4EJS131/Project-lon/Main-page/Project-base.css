@@ -1,14 +1,18 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: inherit;
+    box-sizing: inherit; 
+    /*Kế thừa giá trị thuộc tính box sizing từ phần 
+    tử cha của nó*/
 }
 
 html {
     font-size: 62.5%;
     line-height: 4rem;
+    /*Thiết lập chiều cao giữa các dòng*/
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
+    /*Lấy size nằm ở vùng borde, lấy rộng cao của cả phần tử padding-border*/
 }
 
 li {
@@ -21,13 +25,4 @@ li a {
 
 a {
     cursor: pointer;
-}
-
-.grid__full-width {
-    width: 100%;
-}
-
-.grid__row {
-    display: flex;
-    flex-wrap: wrap;
 }

@@ -12,37 +12,30 @@ body{
     background-color: black;
 }
 .sign-title{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 44px;
+    font-size: 28px;
     font-weight: 600;
-    margin: 35px 0px;
-    color:black;
-    flex-direction: column;
+    margin-top: 2rem;
 }
-.sign-empty{
+/* .sign-empty{
     height: 20px;
-}
+} */
 .layoutSign{
-    width: 30%;
-    height: 860px;
+    width: 31%;
+    height: 588px;
     border: solid 1px black;
-    margin-top: 70px;
+    margin-top: 34px;
     background-color: #fff;
 }
 .sign-main{
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 570px;
+    height: 445px;
     margin: 0px 45px;
     background-color: #fff;
-
 }
 .sign-form-group{
-    height: 385px;
+    height: 300px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -53,15 +46,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#1c1b1b;
-    width:100%;
-    height: 130px;
+    background-color: #1c1b1b;
+    width: 100%;
+    height: 96px;
 }
 
 .form-items{
     display: flex;
     flex-direction: column;
-    height: 136px;
+    height: 108px;
     justify-content: space-between;
 }
 .message-error{
@@ -75,7 +68,7 @@ body{
 }
 #username{
     font-size: 30px;
-    height: 70px;
+    height: 49px;
     border: 1px solid rgb(226, 218, 218);
     width: 100%;
     border-radius: 14px;
@@ -93,9 +86,9 @@ body{
     font-weight: bold;
     border-radius: 55px;
     border: none;
-    font-size: 27px;
+    font-size: 19px;
     width: 100%;
-    padding: 23px 0px;
+    padding: 15px 0px;
     cursor: pointer;
 }
 .Sign-note{
@@ -144,22 +137,22 @@ a{
     text-decoration:underline;
 }
 img {
-    width: 420px;
-    height: 150px;
+    width: 312px;
+    height: 35px;
 }
 #forget-cancel{
     background-color: rgb(255, 255, 255);
     color: black;
     font-weight: bold;
     border-radius: 55px;
-    border: 1px solid rgb(226, 218, 218) ;
-    font-size: 27px;
+    border: 1px solid rgb(226, 218, 218);
+    font-size: 22px;
     width: 100%;
-    padding: 23px 0px;
+    padding: 14px 0px;
     cursor: pointer;
 }
 label{
-    font-size: 25px;
+    font-size: 21px;
     font-weight: bolder;
 }
 .reset:hover {

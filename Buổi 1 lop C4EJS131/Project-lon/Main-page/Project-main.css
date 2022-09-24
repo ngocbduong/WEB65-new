@@ -4,6 +4,7 @@ header {
     color: white;
     background-color: transparent;
     z-index: 99;
+    /*Thuộc tính xếp chồng lên nhau của 1 phần tử, z-index 99 ưu tiên xếp lên trên*/
     position: absolute;
 }
 
@@ -36,7 +37,7 @@ header i:hover {
     height: 4px;
     background: #dd0000;
     content: "";
-    transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out; /*Hiệu ứng chuyển đổi chậm ở bắt đầu và kết thúc */
     width: 0;
 }
 
@@ -176,6 +177,8 @@ header i:hover {
     animation-name: runningArrow;
     animation-duration: 0.5s;
     animation-fill-mode: both;
+    /* trước khi animation bắt đầu, thì thành phần sẽ trả về cái đầu 
+    tiên và khi nó kết thúc sẽ là cái cuối cùng.*/
     -webkit-animation-timing-function: ease-in-out;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-direction: alternate;
@@ -300,6 +303,8 @@ header i:hover {
     width: 124rem;
     display: inline-block;
     overflow: hidden;
+    /*Khi chiều cao của box không đủ chứa text, 
+    thì text bị tràn sẽ được dấu đi.*/
 }
 
 .section-award-title {
@@ -420,7 +425,9 @@ footer {
     line-height: 42px;
     width: 100%;
     text-overflow: ellipsis;
+    /*Nếu text tràn ra ngoài thì thêm dấu ...*/
     white-space: nowrap;
+    /*Chỉ xuống hàng khi gặp thẻ br*/
     overflow: hidden;
 }
 
